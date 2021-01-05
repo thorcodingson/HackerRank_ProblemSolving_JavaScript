@@ -1,0 +1,17 @@
+function plusMinus(arr) {
+    let pos = 0;
+    let neg = 0;
+    let zero = 0;
+
+    arr.forEach((e) => {
+        if(e > 0) pos++;
+        else if(e === 0) zero++;
+        else neg++;
+    });
+
+    console.log(pos/arr.length);
+    console.log(neg/arr.length);
+    console.log(zero/arr.length);
+}
+
+plusMinus([-4, 3, -9, 0, 4, 1]);
